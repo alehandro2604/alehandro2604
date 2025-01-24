@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            height: 450px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">HELLO WORLD</h1>
+
+    <button onclick="changeFont()">Change Font</button>
+    <button onclick="changeColor()">Change Color</button>
+    <div id="container" class="container"></div>
+    <button onclick="changeBackground()">Change Background</button>
+    <button onclick="changehight()">Change hight</button>
+
+    <script>
+        function changeFont() {
+            // Change the font family and size of the <h1> element
+            document.getElementById("heading").style.fontSize = "50px";
+        }
+
+        function changeColor() {
+            // Change the text color of the <h1> element
+            document.getElementById("heading").style.color = "red";
+        }
+
+        function changeBackground() {
+            document.getElementById("container").style.backgroundColor = "yellow";
+        }
+
+        function changehight() {
+            document.getElementById("container").style.height = "700px";
+        }
+    </script>
+</body>
+</html>
